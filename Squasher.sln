@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squasher.Android", "Squashe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squasher.iOS", "Squasher\Squasher.iOS\Squasher.iOS.csproj", "{1A8F8CEE-CA04-4B48-941E-F1D2574BF6A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squasher", "Squasher\Squasher\Squasher.csproj", "{CE13EBA0-F962-42F2-A981-87969246CE81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squasher", "Squasher\Squasher\Squasher.csproj", "{CE13EBA0-F962-42F2-A981-87969246CE81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F4C7FD8F-D833-4FBF-A855-C5233D479305}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
