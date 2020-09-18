@@ -1,10 +1,13 @@
-﻿<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:Squasher"
             x:Class="Squasher.MainPage">
-    <TabbedPage.Children>
-        <local:Feed></local:Feed>
-        <local:BugCreatePage></local:BugCreatePage>
-    </TabbedPage.Children>
-
+    
+    <NavigationPage Title="Feed">
+        <x:Arguments>
+            <local:Feed />
+        </x:Arguments>
+    </NavigationPage>
+    <local:BugCreatePage />
 </TabbedPage>
