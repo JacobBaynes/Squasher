@@ -3,34 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Squasher.BugCreatePage">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            
-        </ResourceDictionary>
-    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Margin="15">
             <Label Text="TRACK A BUG"
                    TextColor="White"
                    FontSize="30"
                    HorizontalTextAlignment="Center"
-                   BackgroundColor="Blue"/>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="90" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+                   BackgroundColor="Blue" />
+            <Grid RowDefinitions="Auto, 90, *, *, *, *"
+                  ColumnDefinitions="Auto, *">
                 <Label Text="Title: "
-                       
-                       VerticalOptions="CenterAndExpand" 
+                       VerticalOptions="CenterAndExpand"
                        HorizontalOptions="CenterAndExpand" />
                 <Entry Grid.Column="1"
                        Placeholder="Enter Title For Bug" />
@@ -38,7 +21,7 @@
                        Text="Description"
                        VerticalOptions="CenterAndExpand"
                        HorizontalOptions="CenterAndExpand" />
-                <Editor Grid.Row="1" Grid.Column="1" 
+                <Editor Grid.Row="1" Grid.Column="1"
                         Placeholder="Enter a bug description" />
                 <Label Grid.Row="2"
                        Text="Severity Level"
@@ -91,9 +74,7 @@
                        HorizontalOptions="Center" />
                 <Entry Grid.Row="5" Grid.Column="1"
                        Placeholder="Enter Version" />
-
             </Grid>
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
