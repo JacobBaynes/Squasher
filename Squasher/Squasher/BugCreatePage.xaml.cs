@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Squasher
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabbedPage1 : TabbedPage
+    public partial class BugCreatePage : ContentPage
     {
-        public TabbedPage1()
+        public BugCreatePage()
         {
             InitializeComponent();
         }

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Squasher.BugCreatePage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Margin="15">
+            <Label Text="TRACK A BUG"
+                   TextColor="White"
+                   FontSize="30"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="Blue"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Title: "
+                       
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand" />
+                <Entry Grid.Column="1"
+                       Placeholder="Enter Title For Bug" />
+                <Label Grid.Row="1"
+                       Text="Description"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" />
+                <Editor Grid.Row="1" Grid.Column="1" 
+                        Placeholder="Enter a bug description" />
+                <Label Grid.Row="2"
+                       Text="Severity Level"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Center" />
+                <Picker Grid.Row="2" Grid.Column="1"
+                        Title="Select severity level">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Low</x:String>
+                            <x:String>Medium</x:String>
+                            <x:String>High</x:String>
+                            <x:String>Emergency</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Grid.Row="3"
+                       Text="Project"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Center" />
+                <Picker Grid.Row="3" Grid.Column="1"
+                        Title="Select project">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Squasher</x:String>
+                            <x:String>Fizikel</x:String>
+                            <x:String>Project2</x:String>
+                            <x:String>Project4</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Grid.Row="4"
+                       Text="Squasher"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Center" />
+                <Picker Grid.Row="4" Grid.Column="1"
+                        Title="Select Squasher">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Jake</x:String>
+                            <x:String>Katie</x:String>
+                            <x:String>Brian</x:String>
+                            <x:String>Amos</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Grid.Row="5"
+                       Text="Version"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Center" />
+                <Entry Grid.Row="5" Grid.Column="1"
+                       Placeholder="Enter Version" />
+
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

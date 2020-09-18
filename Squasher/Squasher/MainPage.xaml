@@ -1,11 +1,9 @@
 ﻿<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:local="clr-namespace:TabbedPageWithNavigationPage;assembly=TabbedPageWithNavigationPage"
-            x:Class="TabbedPageWithNavigationPage.MainPage">
-    <local:TodayPage />
-    <NavigationPage Title="Schedule" IconImageSource="schedule.png">
-        <x:Arguments>
-            <local:SchedulePage />
-        </x:Arguments>
-    </NavigationPage>
+            xmlns:local="clr-namespace:Squasher"
+            x:Class="Squasher.MainPage">
+    <TabbedPage.Children>
+        <local:BugCreatePage></local:BugCreatePage>
+    </TabbedPage.Children>
+
 </TabbedPage>
